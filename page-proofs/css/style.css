@@ -1,0 +1,65 @@
+body{
+	margin:0;
+	background:#dfe8f6;
+	width:100%;
+	min-width:1000px;
+	height:100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.header{
+	margin:5px;
+	height:28px;
+	float:left;
+}
+.option{
+	height:26px;
+	line-height:26px;
+	border:1px solid #99bce8;
+	background:#d3e1f1;
+	background-image:-moz-linear-gradient(center top , #dee8f4, #d3e1f1);
+	background-image:-o-linear-gradient(top, #dee8f4, #d3e1f1);
+	background-image:-webkit-gradient(linear, left top, left bottom, 
+                color-stop(0%,#dee8f4), color-stop(100%,#d3e1f1));
+}
+.option div{
+	float:left;
+	margin:5px 5px 0 5px;
+	cursor:pointer;
+	padding-left:20px;
+	height:16px;
+	line-height:16px;
+}
+.cabinet{
+	background:url('../img/briefcase.png') no-repeat ;
+}
+.cabinet:hover{
+	background:url('../img/briefcase.png') no-repeat 0 -16px;
+}
+.settings{
+	background:url('../img/settings.png') no-repeat ;
+}
+.settings:hover{
+	background:url('../img/settings.png') no-repeat 0 -16px;
+}
+.help{
+	background:url('../img/help.png') no-repeat ;
+}
+.help:hover{
+	background:url('../img/help.png') no-repeat 0 -16px;
+}
+.option .partition_option_first, .option .partition_option_two{
+	width:1px;
+	height:14px;
+	padding:0;
+	margin:6px 0 0 0;
+}
+.partition_option_first{
+	background:#98c8ff;
+}
+.partition_option_two{
+	background:#fff;
+}
+.arrow_down{
+	font-size:9px;
+}
