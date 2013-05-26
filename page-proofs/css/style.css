@@ -10,9 +10,16 @@ body{
 .header{
 	margin:5px;
 	height:28px;
-	float:left;
 }
-.option{
+.header_left div{
+	float:left;
+	margin:0 8px 0 0;
+}
+.header_right div{
+	float:right;
+	margin:0 8px 0 0;
+}
+.option, .personal_info{
 	height:26px;
 	line-height:26px;
 	border:1px solid #99bce8;
@@ -22,7 +29,7 @@ body{
 	background-image:-webkit-gradient(linear, left top, left bottom, 
                 color-stop(0%,#dee8f4), color-stop(100%,#d3e1f1));
 }
-.option div{
+.option div, .personal_info div{
 	float:left;
 	margin:5px 5px 0 5px;
 	cursor:pointer;
@@ -48,7 +55,8 @@ body{
 .help:hover{
 	background:url('../img/help.png') no-repeat 0 -16px;
 }
-.option .partition_option_first, .option .partition_option_two{
+.option .partition_option_first, .option .partition_option_two,
+.personal_info .partition_option_first, .personal_info .partition_option_two{
 	width:1px;
 	height:14px;
 	padding:0;
@@ -62,4 +70,44 @@ body{
 }
 .arrow_down{
 	font-size:9px;
+}
+.desktop_resolution, .tablet_resolution, .mobile_resolution{
+	width:26px;
+	height:26px;
+	border:1px solid #99bce8;
+	overflow:hidden;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor:pointer;
+}
+.desktop_resolution{
+	background:url('../img/icons_resolution.png') -1px -1px;
+}
+.desktop_resolution:hover{
+	background:url('../img/icons_resolution.png') -1px -29px;
+}
+.desktop_resolution.active_resolution{
+	background:url('../img/icons_resolution.png') -1px -57px;
+}
+.tablet_resolution{
+	background:url('../img/icons_resolution.png') 27px -1px;
+}
+.tablet_resolution:hover{
+	background:url('../img/icons_resolution.png') 27px -29px;
+}
+.tablet_resolution.active_resolution{
+	background:url('../img/icons_resolution.png') 27px -57px;
+}
+.mobile_resolution{
+	background:url('../img/icons_resolution.png') 55px -1px;
+}
+.mobile_resolution:hover{
+	background:url('../img/icons_resolution.png') 55px -29px;
+}
+.mobile_resolution.active_resolution{
+	background:url('../img/icons_resolution.png') 55px -57px;
+}
+.personal_info .personal_id{
+	cursor:none;
 }
